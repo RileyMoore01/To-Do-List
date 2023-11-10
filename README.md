@@ -1,2 +1,9 @@
 # To-Do-List
-Python project creating a to-do list app connected to mysql
+
+# Components
+<h3>GUI</h3>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
