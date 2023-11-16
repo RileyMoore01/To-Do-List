@@ -1,74 +1,36 @@
+/* --------------  HTML PROPS --------------*/
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-  }
+  margin: auto;
+  padding: auto;
+  
+  height: 100vh;
+  background-color: black;
+}
 
-  #container {
-    display: flex;
-  }
+/* -------------- CLASSES -------------- */
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+}
 
-  #menu {
-    width: 20%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
+.add-text {
+  color: white;
+  margin:5px;
+}
 
-  #main {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+/* -------------- IDS -------------- */
+#add-button {
+  height: 30px;
+  width: 100px;
+  border-radius: 25px;
+  
+  text-align: center;
+  background-color: lightskyblue;
+  color: white;
+}
 
-  h1 {
-    color: #333;
-  }
-
-  input {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    background-color: #f2f2f2;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  button {
-    background-color: #ff3333;
-    color: #fff;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-
-  .button {
-    display: block;
-    width: 115px;
-    height: 25px;
-    background: #4E9CAF;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    line-height: 25px;
+#task-input {
+  width: calc(100vw/2);
 }

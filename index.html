@@ -11,10 +11,16 @@
     <title>To-Do List</title>
 </head>
 <body>
-  <div id="container">
-    <div id="menu">
-
-    </div>
+  <div class="todo-container">
+    <h3 class="add-text">Add Task:</h3>
+    <form id="addForm">
+      <input type="text" id="task-input" onkeyup="toggleButton(this, 'submit')" />
+      <input id="add-button" value="Add" />
+    </form>
   </div>
+
+  <form class="task-container">
+    <ul id="items" class="list-group"></ul>
+  </form>
 </body>
 </html>
