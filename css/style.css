@@ -7,6 +7,10 @@ body {
   background-color: black;
 }
 
+header {
+
+}
+
 /* -------------- CLASSES -------------- */
 .todo-container {
   display: flex;
@@ -20,10 +24,54 @@ body {
   margin:5px;
 }
 
+.menu-button {
+  color: white;
+}
+
+.nav-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.nav-bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #f1f1f1;
+}
+
+.nav-bar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 /* -------------- IDS -------------- */
 #add-button {
   height: 30px;
-  width: 100px;
+  max-width: 3em;
+  width: 3em;
   border-radius: 25px;
   
   text-align: center;
@@ -31,6 +79,10 @@ body {
   color: white;
 }
 
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
 #task-input {
-  width: calc(100vw/2);
 }

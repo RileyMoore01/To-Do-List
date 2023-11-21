@@ -7,20 +7,31 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <script src="app.js" defer></script>
+    <script src="js/app.js" defer></script>
     <title>To-Do List</title>
 </head>
 <body>
-  <div class="todo-container">
-    <h3 class="add-text">Add Task:</h3>
-    <form id="addForm">
-      <input type="text" id="task-input" onkeyup="toggleButton(this, 'submit')" />
-      <input id="add-button" value="Add" />
-    </form>
+  <div id="nav-bar" class="nav-bar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Calander</a>
+    <a href="#">All Tasks</a>
   </div>
 
-  <form class="task-container">
-    <ul id="items" class="list-group"></ul>
-  </form>
+  <div id="main">
+    <span class="menu-button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="todo-container">
+      <h3 class="add-text">Add Task:</h3>
+      <form id="addForm">
+        <input type="text" id="task-input" onkeyup="toggleButton(this, 'submit')" />
+        <input id="add-button" value="Add" />
+      </form>
+    </div>
+    
+    <form class="task-container">
+      <ul id="items" class="list-group"></ul>
+    </form>
+  </div>
 </body>
 </html>
